@@ -1,0 +1,160 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FA8ABE65-982D-4AA4-AF2F-15ED769AC7DC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>M_o2jam</RootNamespace>
+    <AssemblyName>M_o2jam</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C_Event, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\execute\C_Event.dll</HintPath>
+    </Reference>
+    <Reference Include="C_Global, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\execute\C_Global.dll</HintPath>
+    </Reference>
+    <Reference Include="C_Socket, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\execute\C_Socket.dll</HintPath>
+    </Reference>
+    <Reference Include="DividerPanel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=09c394fd536ab886">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\execute\DividerPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmLoginoff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLoginoff.Designer.cs">
+      <DependentUpon>FrmLoginoff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewToy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewToy.Designer.cs">
+      <DependentUpon>NewToy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayerInfo.Designer.cs">
+      <DependentUpon>PlayerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmLoginoff.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmLoginoff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewToy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewToy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayerInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PlayerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSBInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RSBInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="toyModi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>toyModi.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RSBInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RSBInfo.Designer.cs">
+      <DependentUpon>RSBInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="toyModi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="toyModi.Designer.cs">
+      <DependentUpon>toyModi.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Imag_Text_Control\ImageTextControl\ImageTextControl.csproj">
+      <Project>{C26EC1E7-F852-4177-832C-0F7B41DB1CCF}</Project>
+      <Name>ImageTextControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Language\Language.csproj">
+      <Project>{0CEF33AA-3E36-4812-BE80-6E74C0E8690B}</Project>
+      <Name>Language</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir)execute\Modules"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

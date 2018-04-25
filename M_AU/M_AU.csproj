@@ -1,0 +1,559 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8039596D-CBD8-4D55-81B5-9A335AAC5C43}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>M_AU</RootNamespace>
+    <AssemblyName>M_AU</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C_Controls, Version=1.0.2540.32209, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\C_Controls\bin\Debug\C_Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="C_Event, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\execute\C_Event.dll</HintPath>
+    </Reference>
+    <Reference Include="C_Global, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\execute\C_Global.dll</HintPath>
+    </Reference>
+    <Reference Include="C_Socket, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\execute\C_Socket.dll</HintPath>
+    </Reference>
+    <Reference Include="DividerPanel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=09c394fd536ab886">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\execute\DividerPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Language, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\execute\Language.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BalanceRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BalanceRecord.Designer.cs">
+      <DependentUpon>BalanceRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardListFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardListFrm.Designer.cs">
+      <DependentUpon>CardListFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClearUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClearUserInfo.Designer.cs">
+      <DependentUpon>ClearUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CloseFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CloseFrm.designer.cs">
+      <DependentUpon>CloseFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsumeListFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsumeListFrm.Designer.cs">
+      <DependentUpon>ConsumeListFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmActivePlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActivePlayer.Designer.cs">
+      <DependentUpon>FrmActivePlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDelPcIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDelPcIP.Designer.cs">
+      <DependentUpon>FrmDelPcIP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm9youUserinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm9youUserinfo.Designer.cs">
+      <DependentUpon>Frm9youUserinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddPcip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddPcip.Designer.cs">
+      <DependentUpon>FrmAddPcip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAuNotice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAuNotice.designer.cs">
+      <DependentUpon>FrmAuNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmhandlesms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmhandlesms.Designer.cs">
+      <DependentUpon>Frmhandlesms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHighQueryCardinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHighQueryCardinfo.Designer.cs">
+      <DependentUpon>FrmHighQueryCardinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHistory.designer.cs">
+      <DependentUpon>FrmHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmItem.designer.cs">
+      <DependentUpon>FrmItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMarry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMarry.Designer.cs">
+      <DependentUpon>FrmMarry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLockAccont.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLockAccont.Designer.cs">
+      <DependentUpon>FrmLockAccont.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMBuyLogDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMBuyLogDetail.Designer.cs">
+      <DependentUpon>FrmMBuyLogDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModifyUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModifyUser.Designer.cs">
+      <DependentUpon>FrmModifyUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryActivateDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryActivateDate.Designer.cs">
+      <DependentUpon>FrmQueryActivateDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryJoinIp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryJoinIp.Designer.cs">
+      <DependentUpon>FrmQueryJoinIp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryMsnName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryMsnName.Designer.cs">
+      <DependentUpon>FrmQueryMsnName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryPadItemInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryPadItemInfo.Designer.cs">
+      <DependentUpon>FrmQueryPadItemInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryUseDetail_Exp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryUseDetail_Exp.Designer.cs">
+      <DependentUpon>FrmQueryUseDetail_Exp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryUserFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryUserFee.Designer.cs">
+      <DependentUpon>FrmQueryUserFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReason.Designer.cs">
+      <DependentUpon>FrmReason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSearchMarry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSearchMarry.Designer.cs">
+      <DependentUpon>FrmSearchMarry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShopBuylog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShopBuylog.Designer.cs">
+      <DependentUpon>FrmShopBuylog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSysPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSysPwd.Designer.cs">
+      <DependentUpon>FrmSysPwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmToken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmToken.Designer.cs">
+      <DependentUpon>FrmToken.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTokenView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTokenView.Designer.cs">
+      <DependentUpon>FrmTokenView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserCashExp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserCashExp.Designer.cs">
+      <DependentUpon>FrmUserCashExp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetHistoryPWD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetHistoryPWD.Designer.cs">
+      <DependentUpon>GetHistoryPWD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogSearch.Designer.cs">
+      <DependentUpon>LogSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OArray.cs" />
+    <Compile Include="Operation.cs" />
+    <Compile Include="PartStop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartStop.Designer.cs">
+      <DependentUpon>PartStop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BalanceRecord.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BalanceRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardListFrm.resx">
+      <DependentUpon>CardListFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClearUserInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClearUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CloseFrm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CloseFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsumeListFrm.resx">
+      <DependentUpon>ConsumeListFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm9youUserinfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm9youUserinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmActivePlayer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmActivePlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddPcip.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmAddPcip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDelPcIP.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmDelPcIP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAuNotice.resx">
+      <DependentUpon>FrmAuNotice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmhandlesms.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmhandlesms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHighQueryCardinfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmHighQueryCardinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHistory.resx">
+      <DependentUpon>FrmHistory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmItem.resx">
+      <DependentUpon>FrmItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMarry.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmMarry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLockAccont.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmLockAccont.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMBuyLogDetail.resx">
+      <DependentUpon>FrmMBuyLogDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModifyUser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmModifyUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryActivateDate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmQueryActivateDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryJoinIp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmQueryJoinIp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryMsnName.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmQueryMsnName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryPadItemInfo.resx">
+      <DependentUpon>FrmQueryPadItemInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryUseDetail_Exp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmQueryUseDetail_Exp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryUserFee.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmQueryUserFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReason.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSearchMarry.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSearchMarry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShopBuylog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmShopBuylog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSysPwd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSysPwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmToken.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmToken.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTokenView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmTokenView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserCashExp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmUserCashExp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetHistoryPWD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GetHistoryPWD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogSearch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LogSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartStop.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PartStop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryCardInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QueryCardInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendReasion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SendReasion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendSth.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SendSth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StarListFrm.resx">
+      <DependentUpon>StarListFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SyncUserNick.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SyncUserNick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAbout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UserAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAboutLowPower.resx">
+      <DependentUpon>UserAboutLowPower.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDetailFrm.resx">
+      <DependentUpon>UserDetailFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDetailFrmLimit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UserDetailFrmLimit.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QueryCardInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryCardInfo.Designer.cs">
+      <DependentUpon>QueryCardInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendAboutInfo.cs" />
+    <Compile Include="SendReasion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendReasion.Designer.cs">
+      <DependentUpon>SendReasion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendSth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendSth.Designer.cs">
+      <DependentUpon>SendSth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StarListFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StarListFrm.Designer.cs">
+      <DependentUpon>StarListFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SyncUserNick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SyncUserNick.Designer.cs">
+      <DependentUpon>SyncUserNick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserAbout.Designer.cs">
+      <DependentUpon>UserAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserAboutLowPower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserAboutLowPower.Designer.cs">
+      <DependentUpon>UserAboutLowPower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDetailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDetailFrm.Designer.cs">
+      <DependentUpon>UserDetailFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDetailFrmLimit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDetailFrmLimit.Designer.cs">
+      <DependentUpon>UserDetailFrmLimit.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Imag_Text_Control\ImageTextControl\ImageTextControl.csproj">
+      <Project>{C26EC1E7-F852-4177-832C-0F7B41DB1CCF}</Project>
+      <Name>ImageTextControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\add.gif" />
+    <Content Include="Resources\close.gif" />
+    <Content Include="Resources\close_open.gif" />
+    <Content Include="Resources\close_over.gif" />
+    <Content Include="Resources\close_over1.gif" />
+    <Content Include="Resources\del.gif" />
+    <Content Include="Resources\edit.gif" />
+    <Content Include="Resources\next_1.gif" />
+    <Content Include="Resources\prev_1.gif" />
+    <None Include="Resources\searchbutton1.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir)execute\Modules"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

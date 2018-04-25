@@ -1,0 +1,273 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5C38E85F-A09A-4643-8269-4273C6350945}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>M_FJ</RootNamespace>
+    <AssemblyName>M_FJ</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DividerPanel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=09c394fd536ab886">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\execute\DividerPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmBanPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBanPlayer.Designer.cs">
+      <DependentUpon>FrmBanPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMissionQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMissionQuery.Designer.cs">
+      <DependentUpon>FrmMissionQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewMission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNewMission.Designer.cs">
+      <DependentUpon>FrmNewMission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPlayLogInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPlayLogInfo.Designer.cs">
+      <DependentUpon>FrmPlayLogInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryAccontInfoReadonly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryAccontInfoReadonly.designer.cs">
+      <DependentUpon>FrmQueryAccontInfoReadonly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryActiveCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryActiveCode.Designer.cs">
+      <DependentUpon>FrmQueryActiveCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDelUserLoginInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDelUserLoginInfo.Designer.cs">
+      <DependentUpon>FrmDelUserLoginInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryAccontInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryAccontInfo.Designer.cs">
+      <DependentUpon>FrmQueryAccontInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryPlayItemInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryPlayItemInfo.Designer.cs">
+      <DependentUpon>FrmQueryPlayItemInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryUserLoginInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryUserLoginInfo.Designer.cs">
+      <DependentUpon>FrmQueryUserLoginInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryUserPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryUserPosition.Designer.cs">
+      <DependentUpon>FrmQueryUserPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryUserPositionReadOnly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryUserPositionReadOnly.designer.cs">
+      <DependentUpon>FrmQueryUserPositionReadOnly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryWedding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryWedding.Designer.cs">
+      <DependentUpon>FrmQueryWedding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFJNotice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFJNotice.designer.cs">
+      <DependentUpon>FrmFJNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTempPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTempPassword.Designer.cs">
+      <DependentUpon>FrmTempPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTop100.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTop100.Designer.cs">
+      <DependentUpon>FrmTop100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operation.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmBanPlayer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmBanPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMissionQuery.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmMissionQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewMission.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmNewMission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPlayLogInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmPlayLogInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryAccontInfoReadonly.resx">
+      <DependentUpon>FrmQueryAccontInfoReadonly.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryActiveCode.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmQueryActiveCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDelUserLoginInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmDelUserLoginInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryAccontInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmQueryAccontInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryPlayItemInfo.resx">
+      <DependentUpon>FrmQueryPlayItemInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryUserLoginInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmQueryUserLoginInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryUserPosition.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmQueryUserPosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryUserPositionReadOnly.resx">
+      <DependentUpon>FrmQueryUserPositionReadOnly.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryWedding.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmQueryWedding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFJNotice.resx">
+      <DependentUpon>FrmFJNotice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTempPassword.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmTempPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTop100.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmTop100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ShortStringArrayDictionary.cs" />
+    <Compile Include="ShortStringDictionary.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\C_Controls\C_Controls.csproj">
+      <Project>{FA6A6246-1F2D-4128-9102-AFA5071877D5}</Project>
+      <Name>C_Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\C_Event\C_Event.csproj">
+      <Project>{AC4B946A-461E-49F0-B32F-8B9F77A82F4C}</Project>
+      <Name>C_Event</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\C_Global\C_Global.csproj">
+      <Project>{A2581DD8-A5B1-4A0A-BCB5-866A7BD0879F}</Project>
+      <Name>C_Global</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\C_Socket\C_Socket.csproj">
+      <Project>{BCA834E4-DD6B-4733-8C55-8CF1334C8C60}</Project>
+      <Name>C_Socket</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Language\Language.csproj">
+      <Project>{0CEF33AA-3E36-4812-BE80-6E74C0E8690B}</Project>
+      <Name>Language</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir)execute\Modules"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

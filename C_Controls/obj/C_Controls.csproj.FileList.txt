@@ -1,0 +1,9 @@
+bin\Debug\C_Controls.dll
+bin\Debug\C_Controls.pdb
+bin\Debug\C_Global.dll
+bin\Debug\C_Global.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\C_Controls.LabelTextBox.LabelTextBox.resources
+obj\Debug\C_Controls.csproj.GenerateResource.Cache
+obj\Debug\C_Controls.dll
+obj\Debug\C_Controls.pdb

@@ -1,0 +1,178 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B7F6BF89-3721-4CE1-9F72-7FD75EF0E97F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>M_SOCCER</RootNamespace>
+    <AssemblyName>M_SOCCER</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C_Event, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\execute\C_Event.dll</HintPath>
+    </Reference>
+    <Reference Include="C_Global, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\execute\C_Global.dll</HintPath>
+    </Reference>
+    <Reference Include="C_Socket, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\execute\C_Socket.dll</HintPath>
+    </Reference>
+    <Reference Include="DividerPanel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=09c394fd536ab886">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\execute\DividerPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageTextControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\execute\ImageTextControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Language, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Language\bin\Debug\Language.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAccountActive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAccountActive.Designer.cs">
+      <DependentUpon>FrmAccountActive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCharacterEquip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCharacterEquip.Designer.cs">
+      <DependentUpon>FrmCharacterEquip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCharacterInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCharacterInfo.Designer.cs">
+      <DependentUpon>FrmCharacterInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBanAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBanAccounts.Designer.cs">
+      <DependentUpon>FrmBanAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNoticeinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNoticeinfo.Designer.cs">
+      <DependentUpon>FrmNoticeinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSoccerPlayerTrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSoccerPlayerTrade.Designer.cs">
+      <DependentUpon>FrmSoccerPlayerTrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRecoveCharacter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRecoveCharacter.Designer.cs">
+      <DependentUpon>FrmRecoveCharacter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operation.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAccountActive.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmAccountActive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCharacterEquip.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmCharacterEquip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCharacterInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmCharacterInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBanAccounts.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmBanAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNoticeinfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmNoticeinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSoccerPlayerTrade.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSoccerPlayerTrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRecoveCharacter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmRecoveCharacter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(TargetPath)" "$(SolutionDir)execute\Modules" /y /s</PostBuildEvent>
+  </PropertyGroup>
+</Project>

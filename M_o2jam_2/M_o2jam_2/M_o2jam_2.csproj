@@ -1,0 +1,188 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{195880B5-6802-41EB-9479-05E83E7D9B99}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>M_o2jam_2</RootNamespace>
+    <AssemblyName>M_o2jam_2</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C_Event, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\execute\C_Event.dll</HintPath>
+    </Reference>
+    <Reference Include="C_Global, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\execute\C_Global.dll</HintPath>
+    </Reference>
+    <Reference Include="C_Socket, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\execute\C_Socket.dll</HintPath>
+    </Reference>
+    <Reference Include="DividerPanel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=09c394fd536ab886">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\execute\DividerPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageTextControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Imag_Text_Control\ImageTextControl\obj\Debug\ImageTextControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Language, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Language\bin\Debug\Language.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivationSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActivationSearch.Designer.cs">
+      <DependentUpon>ActivationSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consume.Designer.cs">
+      <DependentUpon>Consume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiftGoxView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiftGoxView.Designer.cs">
+      <DependentUpon>GiftGoxView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemsShow.Designer.cs">
+      <DependentUpon>ItemsShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemView.Designer.cs">
+      <DependentUpon>ItemView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KickCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KickCard.Designer.cs">
+      <DependentUpon>KickCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PartInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartInfo.Designer.cs">
+      <DependentUpon>PartInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ActivationSearch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ActivationSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consume.resx">
+      <DependentUpon>Consume.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiftGoxView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GiftGoxView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemsShow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ItemsShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemView.resx">
+      <DependentUpon>ItemView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KickCard.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KickCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartInfo.resx">
+      <DependentUpon>PartInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopAccount.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StopAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Status.cs" />
+    <Compile Include="StopAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StopAccount.Designer.cs">
+      <DependentUpon>StopAccount.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir)execute\Modules"</PostBuildEvent>
+  </PropertyGroup>
+</Project>
